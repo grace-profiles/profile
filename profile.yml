@@ -1,4 +1,4 @@
-description: A profile for creating new Grails profiles
+description: A profile for creating new Grace profiles
 skeleton:
     executable: ["**/gradlew*", "**/grailsw*"]
     binaryExtensions: ['jar']

@@ -1,5 +1,5 @@
 description( "Creates a new command that invokes Gradle for the profile" ) {
-  usage "grails create-gradle-command [COMMAND NAME]"
+  usage "grace create-gradle-command [COMMAND NAME]"
   argument name:'Command Name', description:"The name of the command", required:true
   argument name:'Task Name', description:"The name of Gradle the task", required:true
   flag name:'force', description:"Whether to overwrite existing files"

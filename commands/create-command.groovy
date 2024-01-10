@@ -1,5 +1,5 @@
 description( "Creates a new command for the profile" ) {
-  usage "grails create-command [COMMAND NAME]"
+  usage "grace create-command [COMMAND NAME]"
   argument name:'Command Name', description:"The name of the command", required:true
   flag name:'force', description:"Whether to overwrite existing files"
 }

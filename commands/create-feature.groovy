@@ -10,7 +10,7 @@ if(args) {
 # customize configuration here
 # my:
 #   setting: true
-#''', file("features/${fn}/skeleton/grails-app/conf/application.yml"))
+#''', file("features/${fn}/skeleton/app/conf/application.yml"))
 
     render( '''
 description: Description of the feature

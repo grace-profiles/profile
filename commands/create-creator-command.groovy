@@ -1,7 +1,7 @@
 description( "Creates a new create-* command for the profile" ) {
-  usage """grails create-creator-command [Command Name] [Target Dir] [Convention]
+  usage """grace create-creator-command [Command Name] [Target Dir] [Convention]
 
-Example: grails create-creator-command Controller controllers"""
+Example: grace create-creator-command Controller controllers"""
   argument name:'Command Name', description:"The name of the command", required:true
   argument name:'Target Directory', description:"The target directory", required:true
   argument name:'Convention', description:"The convention to use for file names, defaults to command name", required:false

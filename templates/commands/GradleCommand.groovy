@@ -1,5 +1,5 @@
 description( "TODO: command description" ) {
-  usage "grails ${lowerCaseName}"
+  usage "grace ${lowerCaseName}"
 
   // TODO: populate arguments
   argument name:'arg1', description:"arg1 description", required:true

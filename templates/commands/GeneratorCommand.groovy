@@ -1,7 +1,7 @@
 import org.grails.cli.interactive.completers.DomainClassCompleter
 
 description( "Generates a ${simpleName}" ) {
-  usage "grails generate-${lowerCaseName} [DOMAIN CLASS]"
+  usage "grace generate-${lowerCaseName} [DOMAIN CLASS]"
   argument name:'Domain Class', description:"The name of the domain class", required:true
   completer DomainClassCompleter
   flag name:'force', description:"Whether to overwrite existing files"
@@ -10,7 +10,7 @@ description( "Generates a ${simpleName}" ) {
 if(args) {
   def classNames = args
   if(args[0] == '*') {
-    classNames = resources("file:grails-app/domain/**/*.groovy").collect { className(it) }
+    classNames = resources("file:app/domain/**/*.groovy").collect { className(it) }
   }
   for(arg in classNames) {
     def sourceClass = source(arg)
@@ -18,7 +18,7 @@ if(args) {
     if(sourceClass) {
       def model = model(sourceClass)
       render template: template('${targetDirectory}/${simpleName}.groovy'),
-             destination: file("grails-app/${targetDirectory}/\${model.packagePath}/\${model.convention('${convention}')}.groovy"),
+             destination: file("app/${targetDirectory}/\${model.packagePath}/\${model.convention('${convention}')}.groovy"),
              model: model,
              overwrite: overwrite
 

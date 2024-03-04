@@ -2,7 +2,6 @@ buildscript {
     repositories {
         // mavenLocal()
         mavenCentral()
-        // maven { url "https://repo.grails.org/grails/core" }
         maven { url "https://plugins.gradle.org/m2/" }
         maven { url 'https://repo.gradle.org/gradle/libs-releases' }
     }
@@ -31,7 +30,6 @@ apply plugin: "signing"
 repositories {
     // mavenLocal()
     mavenCentral()
-    // maven { url "https://repo.grails.org/grails/core" }
 }
 
 dependencies {
@@ -93,7 +91,7 @@ publishing {
                 scm {
                     connection = 'scm:git:git://github.com/grace-profiles/profile.git'
                     developerConnection = 'scm:git:ssh://github.com:grace-profiles/profile.git'
-                    url = 'https://github.com/grace-profiles/profile/tree/2022.2.x'
+                    url = 'https://github.com/grace-profiles/profile'
                 }
             }
         }

@@ -1,5 +1,5 @@
 description( "Creates a new profile feature" ) {
-  usage "grails create-feature [Feature Name NAME]"
+  usage "grace create-feature [Feature Name NAME]"
   argument name:'Feature Name', description:"The name of the feature", required:true
 }
 

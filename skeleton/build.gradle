@@ -16,7 +16,7 @@ repositories {
 }
 
 dependencies {
-    implementation "org.codehaus.groovy:groovy:$groovyVersion"
+    implementation "org.apache.groovy:groovy:$groovyVersion"
     profile "org.graceframework.profiles:base:$baseVersion"
 }
 

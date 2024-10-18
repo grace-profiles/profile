@@ -8,8 +8,7 @@ build:
     repositories:
         - "mavenLocal()"
         - "mavenCentral()"
-        - "https://plugins.gradle.org/m2/"
-        - "https://repo.gradle.org/gradle/libs-releases"
+        - "gradlePluginPortal()"
     plugins:
         - groovy
         - eclipse

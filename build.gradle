@@ -15,8 +15,8 @@ ext."signing.password" = project.hasProperty("signing.password") ? project.getPr
 ext."signing.secretKeyRingFile" = project.hasProperty("signing.secretKeyRingFile") ? project.getProperty('signing.secretKeyRingFile') : ("${System.properties['user.home']}${File.separator}.gnupg${File.separator}secring.gpg")
 ext.isReleaseVersion = !projectVersion.endsWith("SNAPSHOT")
 
-version projectVersion
-group "org.graceframework.profiles"
+version = projectVersion
+group = "org.graceframework.profiles"
 
 apply plugin: "eclipse"
 apply plugin: "idea"
@@ -119,7 +119,7 @@ nexusPublishing {
 
 afterEvaluate {
     signing {
-        required { isReleaseVersion && gradle.taskGraph.hasTask("publish") }
+        required = isReleaseVersion && gradle.taskGraph.hasTask("publish")
         sign publishing.publications.maven
     }
 }

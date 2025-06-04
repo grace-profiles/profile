@@ -1,0 +1,42 @@
+== create-gradle-command
+
+=== Description
+
+Creates a new command that invokes Gradle for the profile.
+
+=== Arguments
+
+[cols="1,2,1"]
+|===
+|**Name**
+|**Description**
+|**Required**
+
+|Command Name
+|The name of the command
+|true
+
+|Task Name
+|The name of Gradle the task
+|true
+|===
+
+=== Flags
+
+[cols="1,2,1"]
+|===
+|**Name**
+|**Description**
+|**Type**
+
+|force
+|Whether to overwrite existing files
+|boolean, default: false
+|===
+
+=== Usage
+
+[source,bash]
+----
+$ grace create-gradle-command [Command Name] [Task Name]
+----

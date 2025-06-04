@@ -1,0 +1,25 @@
+== create-command
+
+=== Description
+
+Creates a new command for the profile.
+
+=== Arguments
+
+[cols="1,2,1"]
+|===
+|**Name**
+|**Description**
+|**Required**
+
+|Command Name
+|The name of the command to be created
+|true
+|===
+
+=== Usage
+
+[source,bash]
+----
+$ grace create-command [Command Name]
+----

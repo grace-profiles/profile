@@ -1,0 +1,25 @@
+== create-feature
+
+=== Description
+
+Creates a new profile feature.
+
+=== Arguments
+
+[cols="1,2,1"]
+|===
+|**Name**
+|**Description**
+|**Required**
+
+|Feature Name
+|The name of the feature
+|true
+|===
+
+=== Usage
+
+[source,bash]
+----
+$ grace create-feature [Feature Name]
+----

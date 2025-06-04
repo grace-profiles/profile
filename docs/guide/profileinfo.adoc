@@ -1,0 +1,24 @@
+You can always get information about the provided command and available features executing
+`grails profile-info profile`
+
+You will see an output similar to:
+
+[source, bash]
+----
+Profile: profile
+Version: 2023.3.0
+--------------------------------------------------------------------------------
+A profile for creating new Grace profiles
+
+Provided Commands:
+--------------------------------------------------------------------------------
+* create-command                 Creates a new command for the profile
+* create-creator-command         Creates a new create-* command for the profile
+* create-feature                 Creates a new profile feature
+* create-generator-command       Creates a new generate-* command for the profile
+* create-gradle-command          Creates a new command that invokes Gradle for the profile
+* create-template                Creates a new template for the profile
+
+Provided Features:
+--------------------------------------------------------------------------------
+----

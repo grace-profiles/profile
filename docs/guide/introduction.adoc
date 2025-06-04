@@ -1,0 +1,8 @@
+Grace Profiles encapsulate project commands, templates, and plugins.
+
+To create a profile using the `profile` profile you can use the next command:
+
+[source, bash]
+----
+grace create-profile com.example.myprofile
+----

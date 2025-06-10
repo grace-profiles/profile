@@ -13,7 +13,7 @@ Creates a new command that invokes Gradle for the profile.
 |**Required**
 
 |Command Name
-|The name of the command
+|The name of the Command
 |true
 
 |Task Name
@@ -39,4 +39,12 @@ Creates a new command that invokes Gradle for the profile.
 [source,bash]
 ----
 $ grace create-gradle-command [Command Name] [Task Name]
+----
+
+=== Examples
+
+[source,bash]
+----
+$ grace create-gradle-command Example example
+| Rendered template GradleCommand.groovy to destination commands/example.groovy
 ----

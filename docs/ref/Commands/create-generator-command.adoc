@@ -2,7 +2,7 @@
 
 === Description
 
-Creates a new `generate-*` command for the profile.
+Creates a new `generate-*` Command for the profile.
 
 === Arguments
 
@@ -13,7 +13,7 @@ Creates a new `generate-*` command for the profile.
 |**Required**
 
 |Command Name
-|The name of the command to be created
+|The name of the Command
 |true
 
 |Target Directory
@@ -43,4 +43,13 @@ Creates a new `generate-*` command for the profile.
 [source,bash]
 ----
 $ grace create-generator-command [Command Name] [Target Directory]
+----
+
+=== Examples
+
+[source,bash]
+----
+$ grace create-generator-command Example example
+| Rendered template GeneratorCommand.groovy to destination commands/generate-example.groovy
+| Rendered template GeneratorTemplate.groovy to destination templates/example/Example.groovy
 ----

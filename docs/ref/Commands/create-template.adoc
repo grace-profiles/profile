@@ -13,7 +13,7 @@ Creates a new template for the profile.
 |**Required**
 
 |Template Name
-|The name of the template
+|The name of the Template
 |true
 |===
 
@@ -35,4 +35,12 @@ Creates a new template for the profile.
 [source,bash]
 ----
 $ grace create-template [Template Name]
+----
+
+=== Examples
+
+[source,bash]
+----
+$ grace create-template Example
+| Rendered template GeneratorTemplate.groovy to destination templates/Example.groovy
 ----

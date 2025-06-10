@@ -1,6 +1,6 @@
-description( "Creates a new command for the profile" ) {
-  usage "grace create-command [COMMAND NAME]"
-  argument name:'Command Name', description:"The name of the command", required:true
+description( "Creates a new Command for the profile" ) {
+  usage "grace create-command [Command Name]"
+  argument name:'Command Name', description:"The name of the Command", required:true
   flag name:'force', description:"Whether to overwrite existing files"
 }
 

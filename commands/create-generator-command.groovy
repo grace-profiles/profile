@@ -1,8 +1,8 @@
-description( "Creates a new generate-* command for the profile" ) {
+description( "Creates a new generate-* Command for the profile" ) {
   usage """grace create-generator-command [Command Name] [Target Dir] [Convention]
 
 Example: grace create-generator-command Controller controllers"""
-  argument name:'Command Name', description:"The name of the command", required:true
+  argument name:'Command Name', description:"The name of the Command", required:true
   argument name:'Target Directory', description:"The target directory", required:true
   argument name:'Convention', description:"The convention to use for file names, defaults to command name", required:false
   flag name:'force', description:"Whether to overwrite existing files"

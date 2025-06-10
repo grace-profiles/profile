@@ -1,6 +1,6 @@
-description( "Creates a new profile feature" ) {
+description( "Creates a new profile Feature" ) {
   usage "grace create-feature [Feature Name]"
-  argument name:'Feature Name', description:"The name of the feature", required:true
+  argument name:'Feature Name', description:"The name of the Feature", required:true
 }
 
 if(args) {

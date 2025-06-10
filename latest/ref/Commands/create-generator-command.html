@@ -88,7 +88,7 @@ function addJsClass(el) {
 <div class="sect2">
 <h3 id="_description">Description</h3>
 <div class="paragraph">
-<p>Creates a new <code>generate-*</code> command for the profile.</p>
+<p>Creates a new <code>generate-*</code> Command for the profile.</p>
 </div>
 </div>
 <div class="sect2">
@@ -107,7 +107,7 @@ function addJsClass(el) {
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Command Name</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The name of the command to be created</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The name of the Command</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">true</p></td>
 </tr>
 <tr>
@@ -150,6 +150,16 @@ function addJsClass(el) {
 <div class="listingblock">
 <div class="content">
 <pre class="CodeRay highlight"><code data-lang="bash">$ grace create-generator-command [Command Name] [Target Directory]</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_examples">Examples</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="bash">$ grace create-generator-command Example example
+| Rendered template GeneratorCommand.groovy to destination commands/generate-example.groovy
+| Rendered template GeneratorTemplate.groovy to destination templates/example/Example.groovy</code></pre>
 </div>
 </div>
 </div>

@@ -16,7 +16,6 @@ repositories {
 }
 
 dependencies {
-    implementation "org.apache.groovy:groovy:$groovyVersion"
     profile "org.graceframework.profiles:base:$baseVersion"
 }
 

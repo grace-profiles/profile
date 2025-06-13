@@ -19,14 +19,14 @@ Creates a new command for the profile.
 
 === Usage
 
-[source,bash]
+[source,console]
 ----
 $ grace create-command [Command Name]
 ----
 
 === Examples
 
-[source,bash]
+[source,console]
 ----
 $ grace create-command Example
 | Rendered template Command.groovy to destination commands/example.groovy

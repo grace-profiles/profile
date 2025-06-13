@@ -36,14 +36,14 @@ Creates a new command that invokes Gradle for the profile.
 
 === Usage
 
-[source,bash]
+[source,console]
 ----
 $ grace create-gradle-command [Command Name] [Task Name]
 ----
 
 === Examples
 
-[source,bash]
+[source,console]
 ----
 $ grace create-gradle-command Example example
 | Rendered template GradleCommand.groovy to destination commands/example.groovy

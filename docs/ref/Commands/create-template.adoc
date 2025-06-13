@@ -32,14 +32,14 @@ Creates a new template for the profile.
 
 === Usage
 
-[source,bash]
+[source,console]
 ----
 $ grace create-template [Template Name]
 ----
 
 === Examples
 
-[source,bash]
+[source,console]
 ----
 $ grace create-template Example
 | Rendered template GeneratorTemplate.groovy to destination templates/Example.groovy

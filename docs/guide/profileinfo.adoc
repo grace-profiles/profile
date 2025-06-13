@@ -3,7 +3,7 @@ You can always get information about the provided command and available features
 
 You will see an output similar to:
 
-[source, bash]
+[source,console]
 ----
 Profile: profile
 Version: 2023.3.0

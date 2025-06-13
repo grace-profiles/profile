@@ -19,14 +19,14 @@ Creates a new profile feature.
 
 === Usage
 
-[source,bash]
+[source,console]
 ----
 $ grace create-feature [Feature Name]
 ----
 
 === Examples
 
-[source,bash]
+[source,console]
 ----
 $ grace create-feature example
 | Feature created at Users/grace/myprofile/features/example

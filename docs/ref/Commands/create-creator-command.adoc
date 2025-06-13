@@ -40,14 +40,14 @@ Creates a new create-* command for the profile.
 
 === Usage
 
-[source,bash]
+[source,console]
 ----
 $ grace create-creator-command [Command Name] [Target Directory]
 ----
 
 === Examples
 
-[source,bash]
+[source,console]
 ----
 $ grace create-creator-command Example example
 | Rendered template CreatorCommand.groovy to destination commands/create-example.groovy

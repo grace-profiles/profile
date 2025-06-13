@@ -40,14 +40,14 @@ Creates a new `generate-*` Command for the profile.
 
 === Usage
 
-[source,bash]
+[source,console]
 ----
 $ grace create-generator-command [Command Name] [Target Directory]
 ----
 
 === Examples
 
-[source,bash]
+[source,console]
 ----
 $ grace create-generator-command Example example
 | Rendered template GeneratorCommand.groovy to destination commands/generate-example.groovy

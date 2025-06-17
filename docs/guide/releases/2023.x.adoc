@@ -13,6 +13,7 @@ link:{github}/releases/tag/v2023.3.0[release notes]
 
 🛠 Improvements
 
+* Add release notes
 * Update documentation 
 * Update README 
 * Update documentation 
@@ -30,6 +31,10 @@ link:{github}/releases/tag/v2023.3.0[release notes]
 * Upgrade to Grace 2023.3.0-RC2 link:{github}/issues/33[#33]
 * Upgrade to Grace 2023.3.0-RC1 link:{github}/issues/30[#30]
 * Upgrade to Gradle 8.14 link:{github}/issues/31[#31]
+
+⚙️ Tasks
+
+* Release v2023.3.0
 
 === 2023.3.0-RC1
 
@@ -76,8 +81,6 @@ link:{github}/releases/tag/v2023.3.0-M2[release notes]
 === 2023.3.0-M1
 
 link:{github}/releases/tag/v2023.3.0-M1[release notes]
-
-link:{github}/issues/ W[# W]hat's Changed
 
 🛠 Improvements
 

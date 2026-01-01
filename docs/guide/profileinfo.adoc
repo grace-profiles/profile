@@ -3,10 +3,10 @@ You can always get information about the provided command and available features
 
 You will see an output similar to:
 
-[source,console]
+[source,console,subs="attributes"]
 ----
 Profile: profile
-Version: 2023.3.0
+Version: {version}
 Extends:
 Description: A profile for creating new Grace profiles
 

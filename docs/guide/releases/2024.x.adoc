@@ -1,3 +1,24 @@
+=== 2024.0.0-RC1
+
+link:{github}/releases/tag/v2024.0.0-RC1[release notes]
+
+🛠 Improvements
+
+* Add release notes for 2024.0.0-RC1
+* Update README - Update badge versions of Grace and Groovy
+* Update copyright in doc.properties 
+* Skeleton: rename `app/init` to `app/boot` link:{github}/issues/46[#46]
+* Add Gradle task: 'docs' and depend on 'publishGuide' 
+
+🚀 Dependency Upgrades
+
+* Upgrade to Grace 2024.0.0-M2 link:{github}/issues/45[#45]
+* Upgrade to Gradle 8.14.4 link:{github}/issues/47[#47]
+
+⚙️ Tasks
+
+* Release v2024.0.0-RC1
+
 === 2024.0.0-M1
 
 link:{github}/releases/tag/v2024.0.0-M1[release notes]

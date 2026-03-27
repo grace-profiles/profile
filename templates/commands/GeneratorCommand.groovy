@@ -1,33 +1,35 @@
-import org.grails.cli.interactive.completers.DomainClassCompleter
+import org.grails.cli.command.completers.DomainClassCompleter
 
-description( "Generates a ${simpleName}" ) {
-  usage "grace generate-${lowerCaseName} [DOMAIN CLASS]"
-  argument name:'Domain Class', description:"The name of the domain class", required:true
-  completer DomainClassCompleter
-  flag name:'force', description:"Whether to overwrite existing files"
+description("Generates a ${simpleName}") {
+    usage "grace generate-${lowerCaseName} [DOMAIN CLASS]"
+    argument name: 'Domain Class', description: "The name of the domain class", required: true
+    completer DomainClassCompleter
+    flag name: 'force', description: "Whether to overwrite existing files"
 }
 
-if(args) {
-  def classNames = args
-  if(args[0] == '*') {
-    classNames = resources("file:app/domain/**/*.groovy").collect { className(it) }
-  }
-  for(arg in classNames) {
-    def sourceClass = source(arg)
-    boolean overwrite = flag('force')
-    if(sourceClass) {
-      def model = model(sourceClass)
-      render template: template('${targetDirectory}/${simpleName}.groovy'),
-             destination: file("app/${targetDirectory}/\${model.packagePath}/\${model.convention('${convention}')}.groovy"),
-             model: model,
-             overwrite: overwrite
+if (args) {
+    def classNames = args
+    if (args[0] == '*') {
+        classNames = resources('file:app/domain/**/*.groovy').collect { className(it) }
+    }
 
-      addStatus "Generation completed for \${projectPath(sourceClass)}"
+    for (arg in classNames) {
+        def sourceClass = source(arg)
+        boolean overwrite = flag('force')
+
+        if (sourceClass) {
+            def model = model(sourceClass)
+            render template: template('${targetDirectory}/${simpleName}.groovy'),
+                destination: file("app/${targetDirectory}/\${model.packagePath}/\${model.convention('${convention}')}.groovy"),
+                model: model,
+                overwrite: overwrite
+
+            addStatus "Generation completed for \${projectPath(sourceClass)}"
+        }
+        else {
+            error "Domain class not found for name \$arg"
+        }
     }
-    else {
-      error "Domain class not found for name \$arg"
-    }
-  }
 }
 else {
     error "No domain class specified"

@@ -1,3 +1,30 @@
+=== 2024.1.0-RC1
+
+link:{github}/releases/tag/v2024.1.0-RC1[release notes]
+
+⭐️ New Features
+
+* Restructure directory structure See grace-profiles/base#118 link:{github}/issues/62[#62]
+
+🛠 Improvements
+
+* Add release notes for 2024.1.0-RC1
+* Update README - Update badge versions of Grace and Groovy
+* Update skeleton: upgrade to Gradle 8.14.5 link:{github}/issues/64[#64]
+* Update skeleton: migrate to the new directory structure link:{github}/issues/63[#63]
+* Add .sdkmanrc with latest java version 17.0.19-zulu link:{github}/issues/60[#60]
+* Upgrade Release Drafter Gradle Action to v7 link:{github}/issues/59[#59]
+* Upgrade GitHub workflows: migrate java distribution from `adopt` to `zulu` link:{github}/issues/58[#58]
+
+🚀 Dependency Upgrades
+
+* Upgrade to Grace 2024.1.0-M3 link:{github}/issues/57[#57]
+* Upgrade to Gradle 8.14.5 link:{github}/issues/61[#61]
+
+⚙️ Tasks
+
+* Release v2024.1.0-RC1
+
 === 2024.1.0-M1
 
 link:{github}/releases/tag/v2024.1.0-M1[release notes]
@@ -15,7 +42,7 @@ link:{github}/releases/tag/v2024.1.0-M1[release notes]
 
 ⚙️ Tasks
 
-* Release v2024.0.0-M1
+* Release v2024.1.0-M1
 * Upgrade to actions/checkout@v6 link:{github}/issues/53[#53]
 * Upgrade to actions/setup-java@v5 link:{github}/issues/54[#54]
 * Upgrade to gradle/actions/setup-gradle@v5.0.2 link:{github}/issues/55[#55]

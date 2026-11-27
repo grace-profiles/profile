@@ -4,13 +4,13 @@ Grace profile is a simple directory that contains a `profile.yml` file and direc
 
 Grace provides several profiles in the [Grace Profiles](https://github.com/grace-profiles) repository, 
 
-* `base` - a profile for other profiles to extend from
-* `plugin` - a profie to create a plugin
-* `profile` - a profie to create a custom profile
-* `rest-api` - a profie for REST API applications
-* `starter` - A profile for getting start to create anything you like
-* `web-plugin` - a profile for Web plugin that contains web resources `css` `js` `images`
-* `web` - default profile to creae a web app
+* [base](https://github.com/grace-profiles/base) is a profile for other profiles to extend from
+* [plugin](https://github.com/grace-profiles/plugin) is a profie to create a plugin
+* [profile](https://github.com/grace-profiles/profile) is a profie to create a custom profile
+* [rest-api](https://github.com/grace-profiles/rest-api) is a profie for REST API applications
+* [starter](https://github.com/grace-profiles/starter) is a profile to create a minimal application
+* [web](https://github.com/grace-profiles/web) is the default profile to creae a web app
+* [web-plugin](https://github.com/grace-profiles/web-plugin) is a profile for Web plugin that contains web resources `css` `js` `images`
 
 ### Links
 

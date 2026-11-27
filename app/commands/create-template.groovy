@@ -8,7 +8,7 @@ if (args) {
 	def model = model(args[0])
 
     render template: 'templates/GeneratorTemplate.groovy',
-		    destination: file("templates/${model.packagePath}/${model.simpleName}.groovy"),
+		    destination: file("src/main/templates/${model.packagePath}/${model.simpleName}.groovy"),
 		    model: model,
 		    overwrite: flag('force')
 }

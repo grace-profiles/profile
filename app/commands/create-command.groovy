@@ -8,7 +8,7 @@ if (args) {
 	def scriptName = GrailsNameUtils.getClassNameForLowerCaseHyphenSeparatedName(args[0])
 	def model = model(scriptName)
     render template: 'commands/Command.groovy',
-		   destination: file("commands/${model.lowerCaseName}.groovy"),
+		   destination: file("app/commands/${model.lowerCaseName}.groovy"),
 		   model: model,
 		   overwrite: flag('force')
 }

@@ -12,7 +12,7 @@ if (args) {
 	model.taskName = args[1]
 
     render template: 'commands/GradleCommand.groovy',
-		    destination: file("commands/${model.lowerCaseName}.groovy"),
+		    destination: file("app/commands/${model.lowerCaseName}.groovy"),
 		    model: model,
 		    overwrite: flag('force')
 }

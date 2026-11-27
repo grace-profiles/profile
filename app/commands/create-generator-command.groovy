@@ -16,12 +16,12 @@ if (args) {
     model.put('convention', args.size() == 3 ? args[2] : model.simpleName)    
 
     render template: 'commands/GeneratorCommand.groovy',
-           destination: file("commands/generate-${model.lowerCaseName}.groovy"),
+           destination: file("app/commands/generate-${model.lowerCaseName}.groovy"),
            model: model,
            overwrite: flag('force')
 
     render template: 'templates/GeneratorTemplate.groovy',
-           destination: file("templates/${args[1]}/${model.simpleName}.groovy"),
+           destination: file("src/main/templates/${args[1]}/${model.simpleName}.groovy"),
            model: model,
            overwrite: flag('force')           
 }

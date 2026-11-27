@@ -11,7 +11,7 @@ if (args) {
 # customize configuration here
 # my:
 #   setting: true
-#''', file("features/${fn}/skeleton/app/conf/application.yml"))
+#''', file("app/features/${fn}/skeleton/app/conf/application.yml"))
 
     render('''
 description: Description of the feature
@@ -19,7 +19,7 @@ description: Description of the feature
 # dependencies:
 #   compile:
 #     - "org.graceframework.plugins:myplugin:1.0"
-#''', file("features/${fn}/feature.yml"))
+#''', file("app/features/${fn}/feature.yml"))
 
     console.addStatus "Feature created at ${projectPath(dir)}"
 }
